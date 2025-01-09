@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>YouTube Clone</title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/videoPreview.css">
+
+  </head>
+
+  <body>
+
+    <div class="header">
+      <div class="leftSection">
+        <img class="hamburgerIcon" src="assets/hamburger-menu.svg">
+        <img class="youtubeLogo" src="assets/youtube-logo.svg">
+      </div>
+      <div class="middleSection">
+        <input class="searchBox" type="text" placeholder="Search">
+        <div class="buttonContainer">
+          <button class="searchButton">
+            <img class="searchIcon" src="assets/search.svg">
+          </button>
+          <div class="tooltip">Search</div>
+        </div>
+        <div class="buttonContainer">
+          <button class="voiceSearch">
+            <img class="voiceIcon" src="assets/voice-search-icon.svg">
+          </button>
+          <div class="tooltip">Search with your Voice</div>
+        </div>
+      </div>
+      <div class="rightSection">
+        <div class="buttonContainer">
+          <img class="uploadIcon" src="assets/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="buttonContainer">
+          <img class="youtubeApps" src="assets/youtube-apps.svg">
+          <div class="tooltip">YouTube Apps</div>
+        </div>
+        <div class="notificationsContainer buttonContainer">
+          <img class="notificationsIcon" src="assets/notifications.svg">
+          <div class="notificationsCount">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img class="currentUserIcon" src="assets/profile-2.jpeg">
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebarIconContainer">
+        <img class="sidebarIcon" src="assets/home.svg">
+        <div class="sidebarText">Home</div>
+      </div>
+      <div class="sidebarIconContainer">
+        <img class="sidebarIcon" src="assets/explore.svg">
+        <div class="sidebarText">Explore</div>
+      </div>
+      <div class="sidebarIconContainer">
+        <img class="sidebarIcon" src="assets/subscriptions.svg">
+        <div class="sidebarText">Subscriptions</div>
+      </div>
+      <div class="sidebarIconContainer">
+        <img class="sidebarIcon" src="assets/originals.svg">
+        <div class="sidebarText">Originals</div>
+      </div>
+      <div class="sidebarIconContainer">
+        <img class="sidebarIcon" src="assets/youtube-music.svg">
+        <div class="sidebarText">YouTube Music</div>
+      </div>
+      <div class="sidebarIconContainer">
+        <img class="sidebarIcon" src="assets/library.svg">
+        <div class="sidebarText">Library</div>
+      </div>
+    </div>
+    
+    <div class="videoGrid">
+  
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-2.webp">
+            <div class="videoTime">9:11</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile.jpg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile.jpg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">SuperSimpleDev</div>
+                <div class="subscriptionsChannelPreview">547K subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">HTML & CSS Full Course - Beginner to Pro</div>
+            </a>
+            <p class="video-stats">SuperSimpleDev</p>
+            <p class="video-stats">14M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-2.webp">
+            <div class="videoTime">9:11</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile.jpg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile.jpg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">SuperSimpleDev</div>
+                <div class="subscriptionsChannelPreview">547K subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">HTML & CSS Full Course - Beginner to Pro</div>
+            </a>
+            <p class="video-stats">SuperSimpleDev</p>
+            <p class="video-stats">14M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-2.webp">
+            <div class="videoTime">9:11</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile.jpg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile.jpg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">SuperSimpleDev</div>
+                <div class="subscriptionsChannelPreview">547K subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">HTML & CSS Full Course - Beginner to Pro</div>
+            </a>
+            <p class="video-stats">SuperSimpleDev</p>
+            <p class="video-stats">14M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-2.webp">
+            <div class="videoTime">9:11</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile.jpg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile.jpg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">SuperSimpleDev</div>
+                <div class="subscriptionsChannelPreview">547K subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">HTML & CSS Full Course - Beginner to Pro</div>
+            </a>
+            <p class="video-stats">SuperSimpleDev</p>
+            <p class="video-stats">14M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-2.webp">
+            <div class="videoTime">9:11</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile.jpg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile.jpg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">SuperSimpleDev</div>
+                <div class="subscriptionsChannelPreview">547K subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">HTML & CSS Full Course - Beginner to Pro</div>
+            </a>
+            <p class="video-stats">SuperSimpleDev</p>
+            <p class="video-stats">14M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-2.webp">
+            <div class="videoTime">9:11</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile.jpg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile.jpg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">SuperSimpleDev</div>
+                <div class="subscriptionsChannelPreview">547K subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">HTML & CSS Full Course - Beginner to Pro</div>
+            </a>
+            <p class="video-stats">SuperSimpleDev</p>
+            <p class="video-stats">14M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-2.webp">
+            <div class="videoTime">9:11</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile.jpg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile.jpg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">SuperSimpleDev</div>
+                <div class="subscriptionsChannelPreview">547K subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">HTML & CSS Full Course - Beginner to Pro</div>
+            </a>
+            <p class="video-stats">SuperSimpleDev</p>
+            <p class="video-stats">14M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-2.webp">
+            <div class="videoTime">9:11</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile.jpg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile.jpg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">SuperSimpleDev</div>
+                <div class="subscriptionsChannelPreview">547K subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">HTML & CSS Full Course - Beginner to Pro</div>
+            </a>
+            <p class="video-stats">SuperSimpleDev</p>
+            <p class="video-stats">14M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-2.webp">
+            <div class="videoTime">9:11</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile.jpg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile.jpg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">SuperSimpleDev</div>
+                <div class="subscriptionsChannelPreview">547K subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">HTML & CSS Full Course - Beginner to Pro</div>
+            </a>
+            <p class="video-stats">SuperSimpleDev</p>
+            <p class="video-stats">14M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-2.webp">
+            <div class="videoTime">9:11</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile.jpg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile.jpg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">SuperSimpleDev</div>
+                <div class="subscriptionsChannelPreview">547K subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">HTML & CSS Full Course - Beginner to Pro</div>
+            </a>
+            <p class="video-stats">SuperSimpleDev</p>
+            <p class="video-stats">14M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+        <a href="https://www.youtube.com/">
+          <div class="thumbnailContainer">
+            <img class="thumbnail" src="assets/thumbnail-1.webp">
+            <div class="videoTime">4:20</div>
+          </div>
+        </a>
+        <div class="preview-data">
+          <div class="profilePictureContainer">
+            <img class="profile-picture" src="assets/profile-2.jpeg">
+            <div class="channelPreview">
+              <img class="profilePicture" src="assets/profile-2.jpeg">
+              <div class="statsGrid">
+                <div class="nameChannelPreview">Marques Brownlee</div>
+                <div class="subscriptionsChannelPreview">15M subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-data">
+            <a style="text-decoration: none;" href="https://www.youtube.com/">
+              <div class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</div>
+            </a>
+            <p class="video-stats">Marques Brownlee</p>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </body>
+
+</html>

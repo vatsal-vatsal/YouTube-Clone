@@ -1,0 +1,42 @@
+.sidebar {
+  padding-top: 4px;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 200;
+  top: 55px;
+  bottom: 0px;
+  left: 0px;
+  width: 72px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: rgb(219, 219, 219);
+}
+
+.sidebarIconContainer {
+  display: flex;
+  flex-direction: column;
+  height: 74px;
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.sidebar .sidebarIconContainer:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.sidebar .sidebarIcon {
+  height: 24px;
+  margin-bottom: 6px;
+}
+
+.sidebar .sidebarText {
+  font-family: roboto, arial;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,34 @@
+p {
+  margin: 0px 0px 0px 0px;
+  font-family: roboto;
+}
+
+div {
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  padding-top: 81px;
+  padding-left: 96px;
+  background-color: rgb(250, 250, 250);
+  padding-right: 24px;
+  margin-bottom: 1000px;
+}
+
+img {
+  margin: 0px;
+}
+
+button {
+  transition: opacity 100ms;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 80%;
+}
+
+button:active {
+  opacity: 50%;
+}

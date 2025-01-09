@@ -1,0 +1,135 @@
+.videoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+  .videoGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 999px) and (min-width: 751px) {
+  .videoGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .videoGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.thumbnailContainer {
+  display: flex;
+  position: relative;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.thumbnail {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.videoTime {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 4px 8px;
+  font-family: roboto, arial;
+  font-size: 12px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.preview-data {
+  display: flex;
+  column-gap: 8px;
+  align-items: start;
+}
+
+.profilePictureContainer {
+  position: relative;
+  cursor: pointer;
+  border-radius: 100px;
+  width: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-picture {
+  border-radius: 200px;
+}
+
+.channelPreview {
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  padding: 12px 12px;
+  white-space: nowrap;
+  opacity: 0%;
+  transition: opacity 150ms;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.profilePictureContainer:hover .channelPreview {
+  opacity: 100%;
+}
+
+.channelPreview .profilePicture {
+  width: 50px;
+  border-radius: 100px;
+  margin-right: 8px;
+}
+
+.channelPreview .statsGrid {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.nameChannelPreview {
+  font-family: roboto, arial;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.subscriptionsChannelPreview {
+  font-family: roboto, Arial;
+  font-size: 13px;
+  color: gray;
+}
+
+.video-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.video-title {
+  display: inline;
+  font-family: roboto, arial;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: black;
+}
+
+.video-stats {
+  font-size: 12px;
+  color: rgb(90, 90, 90);
+  margin-bottom: -8px;
+}
+
