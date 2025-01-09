@@ -25,6 +25,7 @@
   flex-shrink: 0;
 }
 
+
 .sidebar .sidebarIconContainer:hover {
   background-color: rgb(240, 240, 240);
 }
@@ -39,4 +40,31 @@
   font-size: 10px;
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 1250px) {
+  body {
+    padding-left: 224px;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebarIconContainer {
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+  }
+
+  .sidebar .sidebarIcon {
+    margin-bottom: 0px;
+    margin: 0px 12px 0px 32px;
+  }
+
+  .sidebar .sidebarText {
+    font-size: 11px;
+  }
 }
